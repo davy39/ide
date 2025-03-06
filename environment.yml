@@ -6,4 +6,5 @@ dependencies:
   - python=3.11
   - xeus-python
   - xeus-cpp
+  - xeus-sqlite
   - ipycanvas
