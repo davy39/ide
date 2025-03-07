@@ -7,4 +7,5 @@ dependencies:
   - xeus-python
   - xeus-cpp
   - xeus-sqlite
+  - xeus-javascript
   - ipycanvas
