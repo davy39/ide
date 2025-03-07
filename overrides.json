@@ -1,6 +1,6 @@
 {
   "@jupyterlab/translation-extension:plugin": {
-    "locale": "fr"
+    "locale": "fr_FR"
   },
   "@jupyterlab/apputils-extension:themes": {
     "theme": "JupyterLab Dark"
