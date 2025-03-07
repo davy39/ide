@@ -5,6 +5,7 @@ dependencies:
   - python
   - jupyter_server
   - jupyterlab-language-pack-fr-FR
+  - jupyterlab_server
   - jupyterlite-core >=0.5.0,<0.6
   - jupyterlite-xeus>=3.0.0,<4
   - jupyterlite-pyodide-kernel
