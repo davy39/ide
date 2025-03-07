@@ -4,5 +4,8 @@
   },
   "@jupyterlab/apputils-extension:themes": {
     "theme": "JupyterLab Dark"
+  },
+  "@jupyterlite/application-extension:shell": {
+    "appName": "Jupyter" // Ou un autre nom
   }
 }
