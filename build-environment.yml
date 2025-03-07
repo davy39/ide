@@ -5,7 +5,8 @@ dependencies:
   - python
   - pip
   - jupyter_server
-  - jupyterlite-javascript-kernel
   - jupyterlite-core >=0.5.0,<0.6
   - jupyterlite-xeus>=3.0.0,<4
   - jupyterlite-pyodide-kernel
+  - jupyterlite-p5-kernel
+  - jupyterlite-javascript-kernel
