@@ -6,6 +6,6 @@
     "theme": "JupyterLab Dark"
   },
   "@jupyterlite/application-extension:shell": {
-    "appName": "Jupyter" // Ou un autre nom
+    "appName": "Jupyter"
   }
 }
