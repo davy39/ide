@@ -4,7 +4,6 @@ channels:
   - https://repo.prefix.dev/emscripten-forge-dev
   - conda-forge
 dependencies:
-  - python=3.11
   - xeus-python
   - xeus-cpp
   - xeus-sqlite
