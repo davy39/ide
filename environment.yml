@@ -10,3 +10,4 @@ dependencies:
   - xeus-sqlite
   - xeus-javascript
   - ipycanvas
+  - xeus-ocaml
