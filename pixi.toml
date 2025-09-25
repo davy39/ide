@@ -24,7 +24,7 @@ platforms = ["osx-arm64", "linux-64"]
 [feature.host.dependencies]
 jupyterlab-language-pack-fr-FR = "*"
 jupyterlite-xeus = "==4.2.0"
-jupyterlite-pyodide-kernel = "*"
+#jupyterlite-pyodide-kernel = "*"
 jupyter_server = "*"
 ipywidgets = "*"
 jupyterlab = "*"
