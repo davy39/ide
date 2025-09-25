@@ -30,8 +30,8 @@ jobs:
 
       - name: Install Pixi
         uses: prefix-dev/setup-pixi@v0.9.1
-        with:
-          cache: true
+        #with:
+        #  cache: true
 
       - name: Run the build
         run: pixi run build
