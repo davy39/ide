@@ -9,4 +9,4 @@ dependencies:
   - xeus-sqlite
   - xeus-javascript
   #- ipycanvas
-  - xeus-ocaml
+  - xeus-ocaml = 0.2
