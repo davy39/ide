@@ -5,7 +5,7 @@ dependencies:
   - jupyterlab-language-pack-fr-FR
   - jupyterlite-xeus = 4.2.0
   - jupyterlite-pyodide-kernel
-  - jupyter-server
+  - jupyter_server
 #  - pip:
 #    - jupyterlite-p5-kernel
   
