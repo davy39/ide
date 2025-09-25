@@ -7,5 +7,17 @@
   },
   "@jupyterlite/application-extension:shell": {
     "appName": "Jupyter"
+  },
+  "@jupyterlab/notebook-extension:panel": {
+    "toolbar": [
+      {
+        "name": "download",
+        "label": "Télécharger",
+        "args": {},
+        "command": "docmanager:download",
+        "icon": "ui-components:download",
+        "rank": 50
+      }
+    ]
   }
 }
