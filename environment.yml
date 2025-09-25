@@ -1,6 +1,6 @@
 name: xeus-kernel
 channels:
-  - https://repo.prefix.dev/emscripten # Mined from xeus-ocaml package
+  - https://repo.prefix.dev/emscripten # Mine for xeus-ocaml package
   - https://repo.prefix.dev/emscripten-forge-dev
   - conda-forge
 dependencies:
@@ -8,5 +8,5 @@ dependencies:
   - xeus-cpp
   - xeus-sqlite
   - xeus-javascript
-  - ipycanvas
+  #- ipycanvas
   - xeus-ocaml
