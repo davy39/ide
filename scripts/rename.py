@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import subprocess
 
-KERNEL_DIR = Path(".pixi/envs/wasm/share/jupyter/kernels")
+KERNEL_DIR = Path(".pixi/envs/kernel/share/jupyter/kernels")
 
 kernels = {
     "xpython": "Python",
