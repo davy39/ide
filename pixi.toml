@@ -31,7 +31,7 @@ jupyter_server = "*"
 ipywidgets = "*"
 jupyterlab = "*"
 jq = "*" # for processing JSON files in the tasks
-
+rattler-build = "*"
 # make sure that we have the WASM environment installed before building the app
 [feature.host.tasks]
 
