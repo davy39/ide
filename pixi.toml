@@ -7,16 +7,15 @@ channels = ["conda-forge"]
 
 [feature.kernel]
 # add the emscripten-forge channel to the list of channels
-channels = ["https://repo.prefix.dev/xeus-ocaml", # Mine for xeus-ocaml package
-            "https://repo.prefix.dev/emscripten-forge-dev"]
+channels = ["https://repo.prefix.dev/emscripten-forge-dev"]
 platforms = ["emscripten-wasm32"]
 
 [feature.kernel.dependencies]
+xeus-cpp = "*"
 xeus-python = "*"
 xeus-sqlite = "*"
 xeus-javascript = "*"
 xeus-ocaml = "*"
-CppInterOp = "*"
 
 [feature.host]
 channels = ["conda-forge"]
@@ -26,31 +25,20 @@ xeus = ">=5.2.4"
 jupyterlab-language-pack-fr-FR = "*"
 jupyterlite-xeus = ">=4.2.2"
 #jupyterlite-pyodide-kernel = "*"
+jupyterlite-terminal ="*"
 jupyterlab-myst = "*"
 jupyter_server = "*"
 ipywidgets = "*"
 jupyterlab = "*"
-jq = "*" # for processing JSON files in the tasks
-rattler-build = "*"
+
 # make sure that we have the WASM environment installed before building the app
 [feature.host.tasks]
 
 setup_kernel = { cmd = "pixi install -e kernel"}
 
-build-c = """
-rattler-build build --recipe recipe/recipe.yaml \
-            -c https://repo.prefix.dev/emscripten-forge-dev \
-            -c conda-forge \
-            --target-platform emscripten-wasm32
-"""
-
-install-c = """micromamba clean -a -y && \
-pixi run -e kernel micromamba install -y --offline --no-channel-priority $PIXI_PROJECT_ROOT/output/emscripten-wasm32/xeus-cpp*.conda
-"""
-
 rename = "python scripts/rename.py"
 
-build = { cmd = "jupyter lite build --XeusAddon.prefix=.pixi/envs/kernel", depends-on = ["setup_kernel", "build-c", "install-c", "rename"] }
+build = { cmd = "jupyter lite build --XeusAddon.prefix=.pixi/envs/kernel", depends-on = ["setup_kernel", "rename"] }
 
 serve ={ cmd = "python -m http.server 8000 -d dist", depends-on = ["build"]}
 
