@@ -117,3 +117,4 @@ dmypy.json
 pixi.lock
 output/
 cockle_wasm_env/
+cockle-config.json

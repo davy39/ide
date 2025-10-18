@@ -16,6 +16,13 @@ xeus-python = "*"
 xeus-sqlite = "*"
 xeus-javascript = "*"
 xeus-ocaml = "*"
+matplotlib = "*"
+ipycanvas = "*"
+ipywidgets = "*"
+numpy = "*"
+pandas = "*"
+
+
 
 [feature.host]
 channels = ["conda-forge"]
@@ -30,6 +37,7 @@ jupyterlab-myst = "*"
 jupyter_server = "*"
 ipywidgets = "*"
 jupyterlab = "*"
+jupyterlab-geojson = "*"
 
 # make sure that we have the WASM environment installed before building the app
 [feature.host.tasks]
