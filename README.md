@@ -1,4 +1,6 @@
-# Une instance de Jupyterlite avec plein de noyaux !
+# Jupyterlite pour les CPGE
+
+Une instance Jupyterlite avec tout ce qu'il faut pour programmer au lycée et en CPGE :
 
 - Python
 - Javascript
