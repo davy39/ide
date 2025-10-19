@@ -16,11 +16,11 @@ xeus-python = "*"
 xeus-sqlite = "*"
 xeus-javascript = "*"
 xeus-ocaml = "*"
-#matplotlib = "*"
-#ipycanvas = "*"
+matplotlib = "*"
+ipycanvas = "*"
 ipywidgets = "*"
-#numpy = "*"
-#pandas = "*"
+numpy = "*"
+pandas = "*"
 
 
 
