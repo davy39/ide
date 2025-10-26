@@ -37,6 +37,7 @@ jupyter_server = "*"
 ipywidgets = "*"
 #jupyterlab = "*"
 jupyterlab-geojson = "*"
+micromamba = "*"
 
 [feature.host.pypi-dependencies]
 jupyterlite-terminal= { url = "https://github.com/jupyterlite/terminal/releases/download/v1.0.1/jupyterlite_terminal-1.0.1-py3-none-any.whl"}
